@@ -28,7 +28,7 @@ Documentation = "https://github.com/BigStationW/ComfyUi-ConditioningNoiseInjecti
 "Bug Tracker" = "https://github.com/BigStationW/ComfyUi-ConditioningNoiseInjection/issues"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "bigstationw"
 DisplayName = "ComfyUi-ConditioningNoiseInjection"
 Icon = ""
 includes = [] 
