@@ -106,7 +106,7 @@ app.registerExtension({
 
         const originalApiQueuePrompt = api.queuePrompt;
 
-        api.queuePrompt = async function (number, { output, workflow }) {
+        api.queuePrompt = async function (number, { output, workflow }, options) {
             debugLog("[NoiseInjection JS] API queuePrompt intercepted");
 
             // Detect parameters from the current graph state
@@ -124,7 +124,7 @@ app.registerExtension({
                 }
             }
 
-            return originalApiQueuePrompt.call(this, number, { output, workflow });
+            return originalApiQueuePrompt.call(this, number, { output, workflow }, options);
         };
     }
 });
